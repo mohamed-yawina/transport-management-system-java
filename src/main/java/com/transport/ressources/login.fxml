@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:controller="com.transport.controller.LoginController"
+      xmlns:fx="http://javafx.com/fxml"
+      alignment="CENTER"
+      spacing="20"
+      style="-fx-background-color: linear-gradient(to bottom right, #2c3e50, #3498db);">
+    
+    <!-- Header Section -->
+    <StackPane VBox.vgrow="NEVER">
+        <VBox alignment="CENTER" spacing="10">
+            <!-- Title -->
+            <VBox alignment="CENTER" spacing="5">
+                <Text fill="white">
+                    <font>
+                        <Font name="System Bold" size="24"/>
+                    </font>
+                    Système de Gestion de Transport
+                </Text>
+                <Text fill="#ecf0f1">
+                    <font>
+                        <Font size="16"/>
+                    </font>
+                    Connectez-vous à votre compte
+                </Text>
+            </VBox>
+        </VBox>
+    </StackPane>
+    
+    <!-- Login Form -->
+    <VBox fx:id="loginForm" 
+          alignment="CENTER" 
+          spacing="15"
+          style="-fx-background-color: rgba(255,255,255,0.95); -fx-background-radius: 10; -fx-padding: 30;"
+          maxWidth="400">
+        
+        <!-- Email Field -->
+        <VBox spacing="5">
+            <Label text="Email" 
+                   style="-fx-text-fill: #2c3e50; -fx-font-weight: bold;"/>
+            <TextField fx:id="emailField" 
+                      promptText="exemple@transport.com"
+                      style="-fx-background-radius: 5; -fx-border-color: #bdc3c7; -fx-border-radius: 5;"
+                      prefHeight="40"/>
+        </VBox>
+        
+        <!-- Password Field -->
+        <VBox spacing="5">
+            <Label text="Mot de passe" 
+                   style="-fx-text-fill: #2c3e50; -fx-font-weight: bold;"/>
+            <PasswordField fx:id="passwordField" 
+                          promptText="Entrez votre mot de passe"
+                          style="-fx-background-radius: 5; -fx-border-color: #bdc3c7; -fx-border-radius: 5;"
+                          prefHeight="40"/>
+        </VBox>
+        
+        <!-- Remember Me Checkbox -->
+        <HBox alignment="CENTER_LEFT" spacing="5">
+            <CheckBox fx:id="rememberCheckBox" text="Se souvenir de moi"/>
+        </HBox>
+        
+        <!-- Login Button -->
+        <Button text="CONNEXION" 
+                fx:id="loginButton"
+                onAction="#login"
+                style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5; -fx-padding: 12 30;"
+                maxWidth="Infinity"/>
+        
+        <!-- Forgot Password -->
+        <Button text="Mot de passe oublié ?" 
+                style="-fx-background-color: transparent; -fx-text-fill: #3498db; -fx-border-color: transparent;"
+                onAction="#forgotPassword"/>
+        
+        <!-- Status Message -->
+        <Label fx:id="messageLabel" 
+               style="-fx-font-size: 14px;"
+               wrapText="true"
+               maxWidth="350"/>
+    </VBox>
+    
+    <!-- Footer -->
+    <VBox alignment="CENTER" spacing="5">
+        <Text fill="white">
+            <font>
+                <Font size="12"/>
+            </font>
+            © 2026 Transport Management System
+        </Text>
+        <Text fill="#ecf0f1">
+            <font>
+                <Font size="11"/>
+            </font>
+            Version 1.0.0
+        </Text>
+    </VBox>
+</VBox>
