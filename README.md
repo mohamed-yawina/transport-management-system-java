@@ -1,85 +1,126 @@
-📦 Transport Management System
+# 🚚 Transport Management System
 
+A **Java desktop application** designed to manage transport and delivery operations for logistics companies.
+The system provides tools to manage **deliveries, trucks, users, tariffs, and invoices** through a modern **JavaFX graphical interface**.
 
-📌 Description
+This project was developed as part of a **Software Engineering academic project**.
 
-Transport Management System is a Java-based desktop application designed to manage transport and delivery operations for logistics companies.
+---
 
-The application allows administrators, clients, and drivers to manage deliveries, trucks, tariffs, and invoices through an intuitive JavaFX graphical interface.
+# 📌 Description
 
-This project was developed as part of a software engineering academic project.
+The **Transport Management System** simplifies the management of logistics operations by centralizing all transport activities into one platform.
 
+The application allows different types of users to interact with the system:
 
-🎯 Features
+* Administrators manage the system
+* Drivers handle deliveries
+* Clients request and track transport services
 
-The system provides several important features:
+The system is built using **Java and JavaFX**, following a **layered architecture** to ensure maintainability and scalability.
 
-👨‍💼 Admin
+---
+
+# 🎯 Features
+
+## 👨‍💼 Admin
+
+Administrators have full access to system management.
+
 ```
-- Manage users
-- Manage trucks
-- Manage deliveries
-- Manage tariffs
-- Monitor system dashboard
-```
-
-🚚 Driver
-```
-- View assigned deliveries
-- Update delivery status
-- Confirm completed deliveries
-```
-
-👤 Client
-```
-- Request transport services
-- Track deliveries
-- View transport tariffs
-- Access invoices
+✔ Manage users
+✔ Manage trucks
+✔ Manage deliveries
+✔ Manage tariffs
+✔ Monitor system dashboard
 ```
 
-🏗️ Project Architecture
+---
 
-The project follows a layered architecture:
+## 🚚 Driver
 
-1. Model
-Contains the main entities of the system:
+Drivers can manage and update their delivery tasks.
+
 ```
-- User
-- Delivery
-- Invoice
-- Tariff
-- Truck
+✔ View assigned deliveries
+✔ Update delivery status
+✔ Confirm completed deliveries
 ```
 
-2. DAO Layer
-Responsible for database operations:
+---
+
+## 👤 Client
+
+Clients can interact with the transport services.
+
 ```
-- Insert
-- Update
-- Delete
-- Retrieve data
-```
-
-3. Service Layer
-Contains the business logic of the application.
-
-4.UI Layer
-Built using JavaFX and FXML to provide an interactive graphical interface.
-
-
-🛠️ Technologies Used
-```
-- Java
-- JavaFX
-- FXML
-- CSS
-- SQL Database
-- DAO Pattern
-- MVC Architecture
+✔ Request transport services
+✔ Track deliveries
+✔ View transport tariffs
+✔ Access invoices
 ```
 
-📂 Project Structure
+---
+
+# 🏗️ Project Architecture
+
+The application follows a **Layered Architecture**, which separates the system into multiple logical layers.
+
+## 1️⃣ Model Layer
+
+Represents the core entities of the system.
+
+```
+User
+Delivery
+Invoice
+Tariff
+Truck
+```
+
+---
+
+## 2️⃣ DAO Layer (Data Access Object)
+
+Handles communication with the database.
+
+```
+Insert data
+Update records
+Delete records
+Retrieve data
+```
+
+---
+
+## 3️⃣ Service Layer
+
+Contains the **business logic** of the application and acts as a bridge between the user interface and the database layer.
+
+---
+
+## 4️⃣ UI Layer
+
+The graphical interface built with **JavaFX and FXML**, allowing users to interact with the system in an intuitive way.
+
+---
+
+# 🛠️ Technologies Used
+
+```
+Java
+JavaFX
+FXML
+CSS
+SQL Database
+DAO Pattern
+MVC Architecture
+```
+
+---
+
+# 📂 Project Structure
+
 ```
 src/
  ├── model
@@ -90,46 +131,68 @@ src/
  └── resources
 ```
 
-🚀 How to Run the Project
+---
 
-1. Clone the repository :
+# 🚀 How to Run the Project
+
+### 1️⃣ Clone the repository
+
 ```
 git clone https://github.com/yourusername/transport-management-system-java.git
 ```
-2. Open the project in IntelliJ IDEA or Eclipse
-3. Configure the database connection in:
+
+### 2️⃣ Open the project
+
+Open the project using:
+
+* IntelliJ IDEA
+* Eclipse
+
+### 3️⃣ Configure the database connection
+
+Edit the configuration file:
+
 ```
 DBConnection.java
 ```
-4. Run the main application class.
-   
 
-📊 Future Improvements
+### 4️⃣ Run the application
 
-Possible future improvements:
+Run the main launcher class of the project.
+
+---
+
+# 📊 Future Improvements
+
+Possible improvements for future versions:
+
 ```
-- Web version using Spring Boot
-- Mobile application
-- Real-time delivery tracking
-- Payment integration
-- Advanced analytics dashboard
-```
-
-👨‍💻 Author
-```
-Developed by Mohamed Yawina a Computer Engineering student at EMSI interested in:
-
-- Web & Mobile & Software Development
-- Cloud Computing
-- DevOps
+✔ Web version using Spring Boot
+✔ Mobile application
+✔ Real-time delivery tracking
+✔ Payment integration
+✔ Advanced analytics dashboard
 ```
 
-📜 License
-```
-This project is for educational purposes.
-```
-diagramme UML
+---
 
-architecture
+# 👨‍💻 Author
 
-Cela rend le projet beaucoup plus professionnel.
+**Mohamed Yawina**
+Computer Engineering Student at **EMSI**
+
+Interested in:
+
+```
+Web Development
+Mobile Development
+Software Engineering
+Cloud Computing
+DevOps
+```
+
+---
+
+# 📜 License
+
+This project is developed **for educational purposes**.
